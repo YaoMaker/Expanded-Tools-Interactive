@@ -1,0 +1,17 @@
+#square{
+width:20%;
+height: 20%;
+background-color: #0000ff;
+}
+
+#square-1{
+	width: 100px;
+	height: 100px;
+	background-color: #0000ff;
+}
+
+#square-2{
+	width: 4em;
+	height: 4em;
+	background-color: #00ff00;
+}
