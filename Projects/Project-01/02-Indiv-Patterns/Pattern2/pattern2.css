@@ -4,7 +4,19 @@ body {
 	margin-left:0;
 
 }
+.container{
+    width:100%;
+    margin: auto;
+     display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
 .container-triangle{
+   width: 300px;
+    height: 250px;
+    padding: 0px 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -13,13 +25,54 @@ body {
 .trangle{
     height: 0;
     width: 0;
-    border-left: 10vw solid transparent;
-    border-right: 10vw solid transparent;
-    border-bottom: 15vw solid #d76f71;
+    border-left: 20vw solid transparent;
+    border-right: 20vw solid transparent;
+    border-bottom: 28vw solid #d76f71;
     margin-bottom: 25vw;
     margin-top: 20vw;
     margin-left: -3vw;
     float: left;
+}
+.container-square{
+    width: 300px;
+    height: auto;
+     padding: 0px 0px;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container-square1{
+    width: 300px;
+    height: auto;
+     padding: 0px 0px;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.square{
+    margin-bottom: 25vw;
+    height: 20vw;
+    width: 25vw;
+    background-color: #5bc3c2;
+
+}
+.container-trapezoid{
+    width: 300px;
+    height: auto;
+     padding: 0px 0px;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.trapezoid{
+    margin-bottom: 22vw;
+    margin-left: -17vw;
+    height: 20vw;
+    width: 25vw;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    background-color: #a2e0de;
+     transform: rotate(45deg);
+
 }
 .container-triangle-2{
 	display: flex;
@@ -29,28 +82,75 @@ body {
 	top: 0;
 	left: 0;
 }
-/*.triangle-2{
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid #0000ff66;
-    stroke: red;
-    stroke-width:2;
-    display: inline-block;
-    transform: rotate(-45deg);
-    margin: 0;
-}*/
 
-  .triangle-2{
+  #triangle-1{
+    width: 20vw;
+    height: 20vw;
+    margin: -4vw 0vw 0vw 15vw;
+     clip-path: polygon(50% 0%, 100% 86%, 0 86%, 8% 81%, 91% 81%, 50% 9%, 8% 82%, 0 86%);
+    background-color: black;
+    transform: rotate(105deg);
+}
+ #triangle-2{
+    width: 25vw;
+    height: 25vw;
+    margin: -14vw 0vw 0vw 44vw;
+    clip-path: polygon(50% 0%, 100% 86%, 0 86%, 8% 81%, 91% 81%, 50% 9%, 8% 82%, 0 86%);
+    background-color: black;
+    transform: rotate(44deg);
+}
+ #triangle-3{
+    width: 20vw;
+    height: 20vw;
+   margin: -77vw 0vw 0vw 74vw;
+   clip-path: polygon(50% 0%, 100% 86%, 0 86%, 8% 81%, 91% 81%, 50% 9%, 8% 82%, 0 86%);
+    background-color: black;
+    transform: rotate(80deg);
+}
+#triangle-4{
+    width: 20vw;
+    height: 20vw;
+    margin: -4vw 0vw 0vw 80vw;
+clip-path: polygon(50% 0%, 100% 86%, 0 86%, 8% 81%, 91% 81%, 50% 9%, 8% 82%, 0 86%);
+    background-color: black;
+}
+.container-square-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
     left: 0;
-    right: 0;
-    width: 137px;
-    height: 137px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    border-right: 4px solid #e74c3c;
-    border-bottom: 4px solid #e74c3c;
+}
+
+  #square-1{
+    width: 20vw;
+    height: 20vw;
+    margin: -4vw 0vw 0vw 15vw;
+    background-color: #a2e0de;
+    transform: rotate(105deg);
+    
+}
+ #square-2{
+    width: 25vw;
+    height: 25vw;
+    margin: -14vw 0vw 0vw 44vw;
+    background-color: #a2e0de;
+    transform: rotate(44deg);
+    mix-blend-mode: color-dodge;
+}
+ #square-3{
+    width: 20vw;
+    height: 20vw;
+   margin: -77vw 0vw 0vw 74vw;
+    background-color: #a2e0de;
+    transform: rotate(80deg);
+    mix-blend-mode: color-dodge;
+}
+#square-4{
+    width: 20vw;
+    height: 20vw;
+    margin: -4vw 0vw 0vw 80vw;
+    background-color: #a2e0de;
+    
 }
