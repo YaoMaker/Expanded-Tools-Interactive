@@ -1,0 +1,92 @@
+body{
+	background-color: #FFFF67;
+}
+
+
+#st{
+  position:relative;
+  display:flex;
+  flex-direction:row; 
+  flex-wrap:wrap;
+  justify-content:center;
+}
+@keyframes colorrun {
+  0%   {
+    background-color:#FFFF67; 
+    transform: translate(0px,0px);
+  }
+  25%  {
+    background-color:yellow; 
+    transform: translate(200px,0px);
+  }
+
+  50%  {
+    background-color:blue; 
+    transform: translate(200px,200px);
+  }
+  75%  {
+    background-color:black; 
+    transform: translate(0px,200px);
+  }
+  100% {
+    background-color:#FFFF67; 
+    transform: translate(0px,0px);
+  }
+|}
+
+.square{
+	background-color:#CB88FF;
+	width:100px;
+	height:100px;
+	margin:50px;
+	 -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;  
+ 
+   animation-name: colorrun;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+/*@keyframes color {
+   0% {
+      background-color: #ff686c;
+      height: 5vw;
+      width: 5vw;
+   }
+   100%{
+      background-color: #0dbdd0;
+      height: 6vw;
+      width: 6vw;
+   }
+ }*/
+
+
+.square:hover {
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    width:70px;
+	height:70px;
+    border-style: solid;
+    border-color: #00FF6D;
+    border-width: 25px;
+  /*animation-name: colorrun;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;*/
+    
+}
+
+/*.diamond:hover{
+  width:0;
+  height:0;
+  border:50px solid transparent;
+  border-bottom:70px solid rgba(238, 87, 255);
+  position:relative;
+  top:-50px;
+  display: inline-block;
+  margin-top:-30px;
+  margin-right: -50px;
+  opacity: 0.5;
+  transition: color 2s ease-out;
+  transform: scale(1.5);*/
+  
