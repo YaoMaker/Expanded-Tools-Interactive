@@ -1,0 +1,140 @@
+body{
+	background-color: #8EC8BC;
+
+}
+.container{
+
+}
+.position-fixed{
+    left: 50px;
+    position: relative;
+    display: inline-block;
+    margin: 300px;
+      transform: scale(0.7,0.7);
+       animation-name: color;
+       animation-duration: 2s;
+       animation-iteration-count: infinite;
+}
+@keyframes color {
+   0% {
+      background-color: #ff686c;
+      height: 5vw;
+      width: 5vw;
+   }
+   100%{
+      background-color: #0dbdd0;
+      height: 6vw;
+      width: 6vw;
+   }
+ }
+
+/*#container{
+      position: relative;
+      display: inline-block;
+      margin-right: 150px;
+      margin-bottom: -100px;
+	transform: scale(0.7,0.7);
+
+}*/
+
+.triangle-1{
+	width: 0px;
+	height: 0px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 80px solid #FDCBD4;
+	transform:translateX(220px) translateY(50px) rotate(48deg) ;
+}
+
+.oval-1{
+	  width: 230px;
+      height: 200px;
+      background: #FDCBD4;
+      border-radius: 150px / 125px;
+      transform:translateX(100px);
+      transform:rotate(-35deg);
+      margin-left: 50px;
+
+}
+
+.triangle-2{
+	width: 0px;
+	height: 0px;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 60px solid #FDCBD4;
+	transform:translateX(28px) translateY(-40px) rotate(230deg) ;
+}
+
+.circle-1{
+	  width: 160px;
+      height: 180px;
+      background: #F2BCA4;
+      border-radius: 50%;
+      transform:translateX(80px) translateY(-245px) rotate(200deg);
+
+}
+
+.circle-2{
+	  width: 150px;
+      height: 150px;
+      background: #FFF9E9;
+      border-radius: 50%;
+      transform:translateX(85px) translateY(-410px);
+
+}
+
+.oval-2{
+	  width: 230px;
+      height: 200px;
+      background: #FDCBD4;
+      border-radius: 150px / 125px;
+      transform:rotate(-35deg);
+      margin-left: 50px;
+
+}
+
+.circle-3{
+	  width: 40px;
+      height: 20px;
+      background: #3D625A;
+      border-radius: 50%;
+      transform:translateX(95px) translateY(-515px) rotate(-40deg);
+
+ }
+
+.circle-4{
+	  width: 35px;
+      height: 20px;
+      background: #3D625A;
+      border-radius: 50%;
+      transform:translateX(148px) translateY(-565px) rotate(-30deg);
+
+ }
+
+ .circle-5{
+	width: 18px;
+      height: 18px;
+      background: #3D625A;
+      border-radius: 50%;
+      transform:translateX(150px) translateY(-555px);
+
+ }
+
+.position2-fixed{
+      position: fixed;
+      top:-4850px;
+      left:220px;
+}
+
+#container-2{
+	position: relative;
+      display: inline-block;
+      margin-right: 150px;
+      margin-bottom: -100px;
+      transform: scale(0.7,0.7) rotateY(180deg);
+}
+
+
+
+
