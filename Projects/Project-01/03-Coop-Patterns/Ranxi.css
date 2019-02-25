@@ -9,7 +9,7 @@ body{
     left: 50px;
     position: relative;
     display: inline-block;
-    margin: 300px;
+    margin: 164px;
       transform: scale(0.7,0.7);
        animation-name: color;
        animation-duration: 2s;
@@ -17,12 +17,12 @@ body{
 }
 @keyframes color {
    0% {
-      background-color: #ff686c;
+      
       height: 5vw;
       width: 5vw;
    }
    100%{
-      background-color: #0dbdd0;
+      
       height: 6vw;
       width: 6vw;
    }
@@ -122,9 +122,8 @@ body{
  }
 
 .position2-fixed{
-      position: fixed;
+
       top:-4850px;
-      left:220px;
 }
 
 #container-2{

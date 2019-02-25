@@ -8,13 +8,17 @@ body{
 	line-height: 1.5em;
 	background:white;
 	font-size: 1em;
+	text-align: center;
 }
 
 h1{
 	margin: 20px;
-	font-size: 3em;
+	 font-family: Arial, Helvetica, sans-serif;
+	 font-size: 40px;
+	 font-weight: 100;
 	font-style: bold;
 }
+
 
 .main{
 	width: 80%;
@@ -29,6 +33,10 @@ ul{
  
 ul li{
 	color: #dadada;
+	margin:1em;
+	margin-top:60px;
+	font-size: 30px;
+
 }
 
 a:link{
@@ -36,8 +44,10 @@ a:link{
 	text-decoration: none;
 }
 
+
 a:hover{
 	text-decoration: underline;
+	color:green;
 }
 
 

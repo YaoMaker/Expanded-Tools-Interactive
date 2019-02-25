@@ -1,0 +1,88 @@
+body {
+  background-color: #3e3e3e;
+  margin:inherit;
+ /* overflow-x: hidden;*/
+
+  /*transform: rotate(-45deg);*/
+}
+
+h1{
+  font-size: 50px;
+}
+h1:hover{
+  color:green;
+}
+.circle1 {
+  height: 8vw;
+  width: 8vw;
+  opacity:1;
+  
+  clip-path: ellipse(11% 40% at 50% 50%);
+  background-color: #ff8b58;
+  float: right;
+  transform: rotate(-45deg);
+  margin: 2vw 20vw 6vw 0vw;
+  transition: transform 5s ease-in-out; 
+
+}
+
+.circler1:hover
+{
+        opacity:1;
+}
+
+
+
+#circle3 div{
+  height: 8vw;
+  width: 8vw;
+    clip-path: ellipse(11% 40% at 50% 50%);
+  background-color: #7ecdcd;
+  float: right;
+  transform: rotate(315deg);
+  margin: 1vw 20vw 9vw 0vw;
+  transition: transform 5s ease-in-out; 
+}
+#circle3 {
+  margin-left: -16vw;
+  width: 130%;
+  position:absolute;
+  mix-blend-mode: difference;
+
+}
+
+
+#circle2 div{
+  height: 8vw;
+  width: 8vw;
+  border-radius: 50%;
+  background-color: #3e3e3e;
+  float: right;
+  margin: 0vw 20vw 6vw 0vw;
+}
+#circle2 {
+  margin-top: 9vw;
+  margin-left: -16vw ;
+  width: 130%;
+  position: fixed;
+  mix-blend-mode: difference;
+
+}
+
+
+#circle4 div{
+  height: 8vw;
+  width: 8vw;
+  border-radius: 50%;
+  background-color: #3e3e3e;
+  float: right;
+  margin: 0vw 20vw 6vw 0vw;
+
+}
+#circle4 {
+  margin-top: 2vw;
+  width: 100%;
+  position: fixed;
+  mix-blend-mode: luminosity;
+
+}
