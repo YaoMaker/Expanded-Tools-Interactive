@@ -28,7 +28,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    transform: rotate(-45deg);
+    transform: translate(600px, 60px );
 }
 .dot-3{
 
@@ -61,7 +61,34 @@
   clip-path: circle(50% at 50% 50%);
   background-color: #5bc3c2;
   margin: 0vw 0vw 0vw -3vw;
+  animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
 }
+@keyframes pulse {
+  0%, 100% {
+    background-color: #5bc3c2;
+  }
+  50% {
+    background-color:#a2e46f;
+  }
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(10px, 0px);
+
+  }
+  
+  50% {
+    transform: translate(10px, 10px);
+  }
+  
+  80% {
+    transform: translate(10px, 30px);
+  }
+}
+
 #blue-cricle2{
   height: 15vw;
   width: 15vw;
@@ -69,6 +96,8 @@
   clip-path: circle(50% at 50% 50%);
   background-color: #5bc3c2;
    margin: 40vw 6vw 6vw 30vw;
+   animation: 
+    pulse 3s ease infinite alternate;
 }
 #blue-cricle3{
   height: 20vw;
@@ -77,6 +106,9 @@
   clip-path: circle(50% at 50% 50%);
   background-color: #5bc3c2;
   margin: -40vw 6vw 6vw 85vw;
+  animation: 
+    nudge 5s linear infinite alternate;
+
 }
 #blue-cricle4{
   height: 20vw;
@@ -85,6 +117,16 @@
   clip-path: circle(50% at 50% 50%);
   background-color: #5bc3c2;
   margin: -50vw 6vw 6vw 55vw;
+}
+#blue-cricle4:hover, #blue-cricle4:focus, #blue-cricle4:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 #red-cricle1{
@@ -95,12 +137,52 @@
   background-color: #d76f71;
   margin: -44vw 0vw 0vw 0vw;
 }
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+#red-cricle1:hover, #red-cricle1:focus, #red-cricle1:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
 #red-cricle2{
     height: 25vw;
     width: 25vw;
     clip-path: ellipse(47% 46% at 50% 50%);
     background-color: #d76f71;
     margin: 3vw 6vw 6vw 36vw;
+}
+#red-cricle2:hover, #red-cricle2:focus, #red-cricle2:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 #red-cricle3{
   height: 20vw;
@@ -110,6 +192,16 @@
   background-color: #d76f71;
   margin: -19vw 0vw 0vw 92vw;
 }
+#red-cricle3:hover, #red-cricle3:focus, #red-cricle3:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
 #red-cricle4{
     height: 13vw;
     width: 13vw;
@@ -117,12 +209,56 @@
     background-color: #d76f71;
     margin: -58vw 6vw 6vw 52vw;
 }
+#red-cricle4:hover, #red-cricle4:focus, #red-cricle4:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
 #red-cricle5{
     height: 18vw;
     width: 18vw;
     clip-path: circle(50% at 50% 50%);
     background-color: #d76f71;
     margin: -31vw 0vw 0vw 3vw;
+}
+#red-cricle5:hover, #red-cricle5:focus, #red-cricle5:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@keyframes pulse2 {
+  0%, 100% {
+    background-color: pink;
+    clip-path: circle(50% at 50% 50%);
+    transform:rotate(0deg);
+  }
+  50% {
+    background-color:red;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    transform:rotate(180deg);
+  }
+}
+
+@keyframes nudge2 {
+  0% {
+    transform: translate(10px, 30px) rotate(0deg);
+
+  }
+  
+  100% {
+    transform: translate(10px, 10px) rotate(180deg);
+  }
+  
 }
 
 #pink-cricle1{
@@ -132,6 +268,9 @@
   clip-path: circle(50% at 50% 50%);
   background-color: #fec3c5;
   margin: -39vw 0vw 0vw 0vw;
+  animation: 
+    pulse2 5s ease infinite alternate, 
+    nudge2 5s linear infinite alternate;
 }
 #pink-cricle2{
     height: 10vw;
@@ -139,6 +278,8 @@
     clip-path: ellipse(47% 46% at 50% 50%);
     background-color: #fec3c5;
     margin: 3vw 6vw 6vw 36vw;
+    animation: 
+    nudge 5s linear infinite alternate;
 }
 #pink-cricle3{
   height: 40vw;
@@ -146,6 +287,10 @@
     clip-path: circle(50% at 50% 50%);
     background-color: #fec3c5;
     margin: -41vw 0vw 0vw 92vw;
+    animation: 
+  
+    nudge2 5s linear infinite alternate;
+
 }
 #pink-cricle4{
     height: 15vw;
@@ -153,4 +298,8 @@
     clip-path: ellipse(50% 49% at 50% 50%);
     background-color: #fec3c5;
         margin: -78vw 6vw 6vw 80vw;
+        animation: 
+    pulse2 5s ease infinite alternate, 
+    nudge2 5s linear infinite alternate;
+
 }
