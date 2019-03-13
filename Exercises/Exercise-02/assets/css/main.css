@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #DADADA;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: white;
+	position: relative;
+	border: solid black 5px;
+}

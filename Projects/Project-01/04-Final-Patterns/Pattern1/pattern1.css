@@ -41,7 +41,7 @@ h1:hover{
   float: right;
   transform: rotate(315deg);
   margin: 1vw 20vw 9vw 0vw;
-  transition: transform 5s ease-in-out; 
+  transition: transform 5s ease-in-out ; 
 }
 #circle3 {
   margin-left: -16vw;
