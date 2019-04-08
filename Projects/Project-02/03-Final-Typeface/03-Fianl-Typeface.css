@@ -1,0 +1,1799 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+
+	font-family: sans-serif;
+	line-height: 1.5em;
+	background:white;
+	font-size: 1em;
+	text-align: center;
+}
+
+h1{
+	margin: 50px;
+	 font-family: Arial, Helvetica, sans-serif;
+	 font-size: 40px;
+	 font-weight: 100;
+	font-style: bold;
+}
+
+
+.main{
+	width: auto;
+	margin: 100px auto;
+	padding: 50px;
+}
+
+.box{
+	width:80%;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+
+ul{
+	list-style: none;
+}
+ 
+ul li{
+	color: #dadada;
+	margin:1em;
+	margin-top:60px;
+	font-size: 30px;
+
+}
+
+a:link{
+	color: #0000ff;
+	text-decoration: none;
+}
+
+
+a:hover{
+	text-decoration: underline;
+	color:green;
+}
+/*-----------------------------A------------------------------------*/
+.LetterA{
+	position:absolute;
+	left:200px;
+	
+}
+
+.LetterA > .triangle-up-red{
+	transition: top 2s ease;
+	width: 0;
+	height: 0;
+	position:absolute;
+	top: 0px;
+	mix-blend-mode: multiply;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+	animation: topA 4s infinite;
+   animation-play-state: paused;
+}
+.LetterA:hover > .triangle-up-red{
+	animation: topA 4s infinite;
+   animation-play-state: running;
+}
+@keyframes topA{
+	0%{
+		top:20px;
+	}
+	50%{
+		top:0px;
+	}
+	100%{
+		top:20px;
+	}
+
+}
+
+
+.triangle-up-blue{
+	width: 0;
+	height: 0;
+	position:absolute;
+	top: 20px;
+	mix-blend-mode: multiply;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #00aeef;
+	animation: LetterAanimation1;
+}
+
+/*-----------------------------B------------------------------------*/
+
+.LetterB{
+	position:absolute;
+	left: 320px;
+}
+.ellipse-red{
+    width: 72px;
+    height: 76px;
+    border-radius: 0% 100% 100% 0%/50%;
+    background: red;
+}    
+
+.LetterB > .ellipse-blue{
+	transition: top 2s ease;
+	position:absolute;
+	top: 0px;
+	mix-blend-mode: multiply;
+	width: 72px;
+	height: 76px;
+	border-radius: 0% 100% 100% 0%/50%;
+	background:  #00aeef;
+	animation: topB 4s infinite;
+   animation-play-state: paused;
+}   
+
+.LetterB:hover > .ellipse-blue{
+	animation: topB 4s infinite;
+   animation-play-state: running;
+}
+@keyframes topB{
+	0%{
+		top: 0px;
+
+	}
+	50%{
+		top: 40px;
+	}
+	100%{
+		top: 0px;	
+	}
+
+}
+
+/*-----------------------------C------------------------------------*/
+
+/*-----------------------------C------------------------------------*/
+
+.LetterC{
+	position:absolute;
+	left: 415px;
+	animation-play-state: paused;
+}
+.ellipseC-red{
+	position:absolute;
+	top: 23px;
+	left:20px;
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	background: red;
+}    
+
+@keyframes scaleC {
+  0% {
+    transform:scale(1);
+    transform-origin: right;
+  }
+
+  50% {
+    transform:scale(1.7);
+    transform-origin: right;
+  }
+
+  100%{
+  	transform:scale(1.7);
+    transform-origin: right;
+  }
+}
+
+.ellipseC-blue{
+	mix-blend-mode: multiply;
+	position:absolute;
+	width: 36px;
+	height: 72px;
+	border-radius: 100px 0 0 100px;
+	top:23px;
+	left:20px;
+	background:  #00aeef;
+	animation: scaleC 4s  infinite normal;
+	animation-play-state: paused;
+
+}  
+.LetterC:hover > .ellipseC-blue{
+    animation: scaleC 4s  infinite normal;
+    animation-play-state: running;
+}
+/*-------------------------------D----------------------------------*/
+.LetterD{
+	position:absolute;
+	left: 496px;
+}
+.ellipseD-red{
+	position:absolute;
+	top: 23px;
+	left:20px;
+	background: red;
+	mix-blend-mode: multiply;
+	width: 39px;
+	height: 72px;
+	border-radius: 0 100px 100px 0;
+	position:absolute;
+	left: 53px;
+	 animation: scaleD 4s infinite;
+	animation-play-state: paused;
+}    
+
+.ellipseD-blue{
+	mix-blend-mode: multiply;
+	background:  #00aeef;
+	position:absolute;
+	top: 23px;
+	left:20px;
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+}  
+
+.LetterD:hover > .ellipseD-red{
+    animation: scaleD 4s infinite;
+    animation-play-state: running;
+}
+@keyframes scaleD {
+  0% {
+    transform:scale(1);
+    transform-origin: left;
+  }
+
+  50% {
+    transform:scale(1.7);
+    transform-origin: left;
+  }
+
+  100%{
+  	transform:scale(1);
+    transform-origin: left;
+  }
+}
+
+/*-------------------------------E-------------------------------------*/
+.LetterE{
+	position:absolute;
+	left: 630px;
+}
+.rectangleE-blue{
+	position: absolute;
+	top:0px;
+	mix-blend-mode: multiply;
+	width: 100px;
+	height: 40px;
+	background:  #00aeef;
+	animation: topE 4s infinite;
+   animation-play-state: paused; 
+	
+}
+.triangleE-red{
+	width: 0; 
+	height: 0; 
+	mix-blend-mode: multiply;
+	border-top: 50px solid transparent;
+     border-left: 100px solid red;
+     border-bottom: 50px solid transparent;
+     position:absolute;
+     top:10px;
+
+}
+.rectangleE-blue2{
+	position: absolute;
+	top: 78px;
+	mix-blend-mode: multiply;
+	width: 100px;
+	height: 40px;
+	background:  #00aeef;
+	animation: buttonE 4s infinite;
+   animation-play-state: paused; 
+}
+
+.LetterE:hover > .rectangleE-blue{
+   animation: topE 4s infinite;
+   animation-play-state: running; 
+}
+.LetterE:hover > .rectangleE-blue2{
+   animation: buttonE 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes buttonE {
+  0%{
+   top:39px;
+  }
+
+  50% {
+    top:78px;
+  }
+  100%{
+  	top:39px;
+  }
+}
+@keyframes topE {
+  0%{
+   top:39px;
+  }
+
+  50% {
+    top:0px;
+  }
+  100%{
+  	top:39px;
+  }
+}
+/*-------------------------------F-------------------------------------*/
+.LetterF{
+	position: absolute;
+	left: 776px;
+}
+.rectangleF-red{
+	position: absolute;
+	top:0px;
+	mix-blend-mode: multiply;
+	width: 40px;
+	height: 120px;
+	background:red;
+}
+.triangleF-blue{
+	position:absolute;
+	top:0px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	border-top: 100px solid #00aeef;
+	border-right: 100px solid transparent;
+	}  
+.triangleF-blue2{
+	position:absolute;
+	top:0px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	border-top: 100px solid #00aeef;
+	border-right: 100px solid transparent;
+	animation: topF 4s infinite;
+    animation-play-state: paused; 
+	} 
+
+.LetterF:hover > .triangleF-blue2{
+   animation: topF 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes topF {
+  0%{
+   top:0px;
+  }
+
+  50% {
+    top:20px;
+  }
+  100%{
+  	top:0px;
+  }
+}
+/*-------------------------------G-------------------------------------*/
+.LetterG{
+	position: absolute;
+	left: 897px;
+}
+.ellipseG-blue{
+	background:#00aeef;
+	position: absolute;
+	top: -21px;
+	width: 120px;
+	height: 60px;
+	border-radius: 100px 100px 0 0;
+	animation: rotateG 4s infinite;
+   animation-play-state: paused; 
+}
+.ellipseG-red{
+	background:red;
+	position: absolute;
+	top:39px;
+	width: 120px;
+	height: 60px;
+	border-radius: 0 0 100px 100px;
+	mix-blend-mode:multiply;
+}
+.LetterG:hover > .ellipseG-blue{
+   animation: rotateG 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes rotateG{
+	0%{
+		transform: rotate(0deg);
+		transform-origin: bottom center;
+	}
+	50%{
+		transform: rotate(-45deg);
+		transform-origin: bottom center;
+	}
+	100%{
+		transform: rotate(0deg);
+		transform-origin: bottom center;
+	}
+
+}
+/*-------------------------------H-------------------------------------*/
+.LetterH{
+	position: absolute;
+	left: 1054px;
+}
+.rectangleH-red{
+	position: absolute;
+	top:0px;
+	left:10px;
+	mix-blend-mode: multiply;
+	width: 40px;
+	height: 120px;
+	background: red;
+	 animation: leftH 4s infinite;
+   animation-play-state: paused; 
+}
+.rectangleH-red2{
+	position: absolute;
+	top:0px;
+	left: 50px;
+	mix-blend-mode: multiply;
+	width: 40px;
+	height: 120px;
+	background: red;
+	 animation: rightH 4s infinite;
+   animation-play-state: paused; 
+}
+.ellipseH-blue{
+	width: 100px;
+	height: 100px;
+	background:#00aeef;
+	border-radius: 50%;
+	mix-blend-mode: multiply;
+	position:absolute;
+	top: 20px;
+	left: 0px;
+}
+.LetterH:hover > .rectangleH-red{
+   animation: leftH 4s infinite;
+   animation-play-state: running; 
+}
+.LetterH:hover > .rectangleH-red2{
+   animation: rightH 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes leftH{
+	0%{
+		left:10px;
+	}
+	50%{
+		left:0px;
+	}
+	100%{
+		left:10px;
+	}
+}
+@keyframes rightH{
+	0%{
+		left:50px;
+	}
+	50%{
+		left:60px;
+	}
+	100%{
+		left:50px;
+	}
+
+}
+/*-------------------------------I-------------------------------------*/
+.LetterI{
+	position: absolute;
+	left: 1218px;
+}
+.rectangleI-red{
+	position: absolute;
+	top:0px;
+	mix-blend-mode: multiply;
+	width: 40px;
+	height: 60px;
+	background: red;
+	 animation: topI 4s infinite;
+   animation-play-state: paused; 
+}
+.rectangleI-blue{
+	position: absolute;
+	top:0px;
+	mix-blend-mode: multiply;
+	width: 40px;
+	height: 60px;
+	background: #00aeef;
+	 animation: bottomI 4s infinite;
+   animation-play-state: paused; 
+}
+.LetterI:hover > .rectangleI-red{
+   animation: topI 4s infinite;
+   animation-play-state: running; 
+}
+.LetterI:hover > .rectangleI-blue{
+   animation: bottomI 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes topI{
+	0%{
+		top:30px;
+	}
+	50%{
+		top:0px;
+	}
+	100%{
+		top:30px;
+	}
+}
+@keyframes bottomI{
+	0%{
+		top:30px;
+	}
+	50%{
+		top:60px;
+	}
+	100%{
+		top:30px;
+	}
+
+}
+/*-------------------------------J-------------------------------------*/
+.LetterJ{
+	position: absolute;
+	top:400px;
+    left:200px;
+
+}
+.rectangleJ-red{
+	position: absolute;
+	top:0px;
+	left: 40px;
+	mix-blend-mode: multiply;
+	width: 40px;
+	height: 120px;
+	background: red;
+}
+.ellipseJ-blue{
+	background:#00aeef;
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	width: 80px;
+	height: 40px;
+	border-radius: 0 0 100px 100px;
+	mix-blend-mode:multiply;
+	animation: rotateJ 4s infinite;
+	animation-play-state: paused;
+}
+.LetterJ:hover > .ellipseJ-blue{
+   animation: rotateJ 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes rotateJ{
+	0%{
+		transform: rotate(-90deg);
+		transform-origin: top center;
+	}
+	50%{
+		transform: rotate(0deg);
+		transform-origin: top center;
+	}
+	100%{
+		transform: rotate(-90deg);
+		transform-origin: top center;
+	}
+
+}
+/*-------------------------------K-------------------------------------*/
+.LetterK{
+	position: absolute;
+	top:400px;
+    left:320px;
+
+}
+.rectangleK-blue{
+	position: absolute;
+	top:0px;
+   width: 0px;  
+   height: 0px;  
+   border-top: 100px solid #00aeef;  
+   border-right: 100px solid transparent;  
+ }
+.rectangleK-red{
+  mix-blend-mode:multiply;
+  position: absolute;
+  top:0px; 
+  width: 0px;  
+  height: 0px;   
+  border-bottom: 100px solid red;  
+  border-right: 100px solid transparent; 
+     animation: topK 4s infinite;
+   animation-play-state: paused;  
+ }  
+ .LetterK:hover > .rectangleK-red{
+   animation: topK 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes topK{
+	0%{
+		top:0px;
+	}
+	50%{
+		top:20px;
+	}
+	100%{
+		top:0px;
+	}
+}
+/*-------------------------------L-------------------------------------*/
+.LetterL{
+	position: absolute;
+	top: 400px;
+	left: 448px;
+}
+.rectangleL-red{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	mix-blend-mode: multiply;
+	width: 40px;
+	height: 120px;
+	background: red;
+}
+.rectangleL-blue{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	mix-blend-mode: multiply;
+	width: 40px;
+	height: 80px;
+	background:#00aeef;
+	 animation: rotateL 4s infinite;
+   animation-play-state: paused; 
+}
+ .LetterL:hover > .rectangleL-blue{
+   animation: rotateL 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes rotateL{
+	0%{
+		transform: rotate(0deg);
+		transform-origin: bottom left ;
+	}
+	50%{
+		transform: rotate(90deg);
+		transform-origin: bottom left;
+	}
+	100%{
+		transform: rotate(0deg);
+		transform-origin: bottom left;
+	}
+}
+/*-------------------------------M-------------------------------------*/
+.LetterM{
+	position: absolute;
+	top: 400px;
+	left: 550px;
+}
+.rectangleM-red{
+	position: absolute;
+	left:0px;
+	mix-blend-mode: multiply;
+   width: 0;  
+   height: 0;  
+   float: left;  
+   border-bottom: 120px solid red;  
+   border-left: 50px solid transparent;  
+   border-right: 50px solid transparent;  
+}
+.rectangleM-blue{
+	position: absolute;
+	left:20px;
+	mix-blend-mode: multiply;
+   width: 0;  
+   height: 0;  
+   float: left;  
+   border-bottom: 120px solid #00aeef ;  
+   border-left: 50px solid transparent;  
+   border-right: 50px solid transparent; 
+    animation: leftM 4s infinite;
+   animation-play-state: paused;  
+}
+
+.LetterM:hover > .rectangleM-blue{
+   animation: leftM 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes leftM{
+	0%{
+		left:0px;
+	}
+	50%{
+		left:20px;
+	}
+	100%{
+		left:0px;
+	}
+
+}
+/*-------------------------------N-------------------------------------*/
+.LetterN{
+	position: absolute;
+	left: 680px;
+	top:400px;
+}
+.rectangleN-red{
+	position: absolute;
+	top:0px;
+	left:10px;
+	mix-blend-mode: multiply;
+	width: 40px;
+	height: 120px;
+	background: red;
+	 animation: leftN 4s infinite;
+   animation-play-state: paused; 
+}
+.rectangleN-red2{
+	position: absolute;
+	top:0px;
+	left: 50px;
+	mix-blend-mode: multiply;
+	width: 40px;
+	height: 120px;
+	background: red;
+	 animation: rightN 4s infinite;
+   animation-play-state: paused; 
+}
+.ellipseN-blue{
+	width: 120px;
+	height: 60px;
+	background:#00aeef;
+	border-radius: 0 0 60px 60px;
+	mix-blend-mode: multiply;
+	position:absolute;
+	top: 40px;
+	left: -20px;
+	transform: rotate(57deg);
+}
+.LetterN:hover > .rectangleN-red{
+   animation: leftN 4s infinite;
+   animation-play-state: running; 
+}
+.LetterN:hover > .rectangleN-red2{
+   animation: rightN 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes leftN{
+	0%{
+		left:10px;
+	}
+	50%{
+		left:0px;
+	}
+	100%{
+		left:10px;
+	}
+}
+@keyframes rightN{
+	0%{
+		left:50px;
+	}
+	50%{
+		left:60px;
+	}
+	100%{
+		left:50px;
+	}
+
+}
+/*-------------------------------O-------------------------------------*/
+.LetterO{
+	position: absolute;
+	top:400px;
+	left:790px;
+}
+.ellipseO-blue{
+	position: absolute;
+	mix-blend-mode: multiply;
+	left:0px;
+	width: 100px;
+	height: 120px;
+	background:#00aeef;
+	border-radius: 60% 50% 50% 60%;
+}
+.ellipseO-red{
+	position: absolute;
+	mix-blend-mode: multiply;
+	left:20px;
+	width: 100px;
+	height: 120px;
+	background:red;
+	border-radius: 45% 50% 50% 45%;
+	 animation: leftO 4s infinite;
+   animation-play-state: paused; 
+}
+
+.LetterO:hover > .ellipseO-red{
+	 animation: leftO 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes leftO {
+	0%{
+		left:0px;
+	}
+	50%{
+		left:20px;
+	}
+	100%{
+		left:0px;
+	}
+}
+/*-------------------------------P-------------------------------------*/
+
+
+.LetterP{
+	position: absolute;
+	top:400px;
+	left: 935px;
+}
+.ellipseP-blue{
+	position: absolute;
+	mix-blend-mode: multiply;
+	left:0px;
+	width: 80px;
+	height: 80px;
+	background:#00aeef;
+	border-radius: 50%;
+	 animation: topP 4s infinite;
+   animation-play-state: paused; 
+}
+.rectangleP-red{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	mix-blend-mode: multiply;
+	width: 40px;
+	height: 120px;
+	background: red;
+}
+.LetterP:hover > .ellipseP-blue{
+	 animation: topP 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes topP {
+	0%{
+		height: 120px;
+	}
+	50%{
+		height: 80px;
+	}
+	100%{
+		height: 120px;
+	}
+
+}
+/*-------------------------------Q-------------------------------------*/
+
+
+.LetterQ{
+	position: absolute;
+	top:400px;
+	left: 1045px;
+}
+.ellipseQ-blue{
+	position: absolute;
+	mix-blend-mode: multiply;
+	left:0px;
+	width: 120px;
+	height: 120px;
+	background:#00aeef;
+	border-radius: 50%;
+}
+.rectangleQ-red{
+	position: absolute;
+	top: 60px;
+	left: 59px;
+	mix-blend-mode: multiply;
+	width: 0px;
+	height: 0px;
+	border-bottom: 60px solid red;
+	border-right: 60px solid transparent;
+	animation: rotateQ 4s infinite;
+	animation-play-state: paused;
+}
+
+.LetterQ:hover > .rectangleQ-red{
+	animation: rotateQ 4s infinite;
+   animation-play-state: running; 
+}
+
+@keyframes rotateQ{
+	0%{
+		transform: rotate(-45deg);
+		transform-origin: bottom left ;
+	}
+	50%{
+		transform: rotate(0deg);
+		transform-origin: bottom left;
+	}
+	100%{
+		transform: rotate(-45deg);
+		transform-origin: bottom left;
+	}
+}
+
+/*-------------------------------R-------------------------------------*/
+.LetterR{
+	position: absolute;
+	top:400px;
+	left: 1218px;
+}
+.ellipseR-blue{
+	position: absolute;
+	mix-blend-mode: multiply;
+	left:0px;
+	width: 70px;
+	height: 120px;
+	background:#00aeef;
+	border-radius:0 60px 60px 0 /50%;
+}
+.rectangleR-red{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	mix-blend-mode: multiply;
+	width: 0px;
+	height: 0px;
+	border-bottom: 60px solid red;
+	border-right: 60px solid transparent;
+	animation: topR 4s infinite;
+	animation-play-state: paused;
+}
+
+.LetterR:hover > .rectangleR-red{
+	animation: topR 4s infinite;
+   animation-play-state: running; 
+}
+
+@keyframes topR{
+	0%{
+		top:0px;
+	}
+	50%{
+		top:60px;
+	}
+	100%{
+		top:0px;
+	}
+
+}
+/*-------------------------------S-------------------------------------*/
+.LetterS{
+	position: absolute;
+	left: 200px;
+	top:600px;
+}
+.ellipseS-blue{
+	background:#00aeef;
+	position: absolute;
+	top: -21px;
+	width: 120px;
+	height: 60px;
+	border-radius: 100px 100px 0 0;
+	animation: rotateS 4s infinite;
+   animation-play-state: paused; 
+}
+.ellipseS-red{
+	background:red;
+	position: absolute;
+	top:39px;
+	width: 120px;
+	height: 60px;
+	border-radius: 0 0 100px 100px;
+	mix-blend-mode:multiply;
+	animation: rotateS 4s infinite;
+   animation-play-state: paused; 
+
+}
+.LetterS:hover > .ellipseS-blue{
+   animation: rotateS 4s infinite;
+   animation-play-state: running; 
+}
+.LetterS:hover > .ellipseS-red{
+   animation: rotateS 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes rotateS{
+	0%{
+		transform: rotate(0deg);
+		transform-origin: bottom center;
+	}
+	50%{
+		transform: rotate(-45deg);
+		transform-origin: bottom center;
+	}
+	100%{
+		transform: rotate(0deg);
+		transform-origin: bottom center;
+	}
+
+}
+/*-------------------------------T-------------------------------------*/
+.LetterT{
+	position: absolute;
+	top: 600px;
+	left: 369px;
+}
+.rectangleT-red{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	mix-blend-mode: multiply;
+	width: 40px;
+	height: 120px;
+	background: red;
+}
+.rectangleT-blue{
+	position: absolute;
+	top: 0px;
+	left: -30px;
+	mix-blend-mode: multiply;
+	width: 100px;
+	height: 40px;
+	background:#00aeef;
+	 animation: rotateT 4s infinite;
+   animation-play-state: paused; 
+}
+ .LetterT:hover > .rectangleT-blue{
+   animation: rotateT 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes rotateT{
+	0%{
+		transform: rotate(90deg);
+		transform-origin: center center ;
+	}
+	50%{
+		transform: rotate(0deg);
+		transform-origin: center center;
+	}
+	100%{
+		transform: rotate(90deg);
+		transform-origin: center center;
+	}
+}
+
+/*-------------------------------U-------------------------------------*/
+.LetterU{
+	position:absolute;
+	left: 480px;
+	top:600px;
+}
+.ellipseU-red{
+	/* position:absolute; */
+	top: 59px;
+	/* left:0px; */
+	background: red;
+	mix-blend-mode: multiply;
+	width: 72px;
+	height: 36px;
+	border-radius: 0 0 100px 100px;
+	position:absolute;
+	left: 20px;
+	animation: scaleU 4s infinite;
+	animation-play-state: paused;
+}    
+
+.ellipseU-blue{
+	mix-blend-mode: multiply;
+	background:  #00aeef;
+	position:absolute;
+	top: 23px;
+	left:20px;
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+}  
+
+.LetterU:hover > .ellipseU-red{
+    animation: scaleU 4s infinite;
+    animation-play-state: running;
+}
+@keyframes scaleU {
+  0% {
+    transform:scale(1);
+    transform-origin: top center;
+  }
+
+  50% {
+    transform:scale(1.7);
+    transform-origin: top center;
+  }
+
+  100%{
+  	transform:scale(1);
+    transform-origin: top center;
+  }
+}
+/*-------------------------------V-------------------------------------*/
+.LetterV{
+	position:absolute;
+	left:600px;
+	top:600px;
+}
+
+.LetterV > .triangleV-red{
+	transition: top 2s ease;
+	width: 0;
+	height: 0;
+	position:absolute;
+	top: 0px;
+	mix-blend-mode: multiply;
+	border-top: 100px solid red;  
+   border-left: 50px solid transparent;  
+   border-right: 50px solid transparent; 
+	animation: topV 4s infinite;
+   animation-play-state: paused;
+}
+.triangleV-blue{
+	width: 0;
+	height: 0;
+	position:absolute;
+	top: 20px;
+	mix-blend-mode: multiply;
+	border-top: 100px solid #00aeef;  
+   border-left: 50px solid transparent;  
+   border-right: 50px solid transparent; 
+}
+
+.LetterV:hover > .triangleV-red{
+	animation: topV 4s infinite;
+   animation-play-state: running;
+}
+@keyframes topV{
+	0%{
+		top:20px;
+	}
+	50%{
+		top:0px;
+	}
+	100%{
+		top:20px;
+	}
+
+}
+/*-------------------------------W-------------------------------------*/
+.LetterW{
+	position: absolute;
+	top: 600px;
+	left: 730px;
+}
+.rectangleW-red{
+	position: absolute;
+	left:0px;
+	mix-blend-mode: multiply;
+   width: 0;  
+   height: 0;  
+   float: left;  
+   border-top: 120px solid red;  
+   border-left: 50px solid transparent;  
+   border-right: 50px solid transparent;  
+}
+.rectangleW-blue{
+	position: absolute;
+	left:20px;
+	mix-blend-mode: multiply;
+   width: 0;  
+   height: 0;  
+   float: left;  
+   border-top: 120px solid #00aeef ;  
+   border-left: 50px solid transparent;  
+   border-right: 50px solid transparent; 
+    animation: leftW 4s infinite;
+   animation-play-state: paused;  
+}
+
+.LetterW:hover > .rectangleW-blue{
+   animation: leftW 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes leftW{
+	0%{
+		left:0px;
+	}
+	50%{
+		left:20px;
+	}
+	100%{
+		left:0px;
+	}
+
+}
+
+/*-------------------------------X-------------------------------------*/
+.LetterX{
+	position: absolute;
+	top: 600px;
+	left: 870px;
+}
+.rectangleX-red{
+	position: absolute;
+	left:0px;
+	mix-blend-mode: multiply;
+   width: 0;  
+   height: 0;  
+   float: left;  
+   border-top: 120px solid red;  
+   border-left: 50px solid transparent;  
+   border-right: 50px solid transparent;  
+}
+.rectangleX-blue{
+	position: absolute;
+	left:20px;
+	mix-blend-mode: multiply;
+   width: 0;  
+   height: 0;  
+   float: left;  
+   border-bottom: 120px solid #00aeef ;  
+   border-left: 50px solid transparent;  
+   border-right: 50px solid transparent; 
+    animation: leftX 4s infinite;
+   animation-play-state: paused;  
+}
+
+.LetterX:hover > .rectangleX-blue{
+   animation: leftX 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes leftX{
+	0%{
+		left:50px;
+	}
+	50%{
+		left:0px;
+	}
+	100%{
+		left:50px;
+	}
+
+}/*-------------------------------Y-------------------------------------*/
+
+.LetterY{
+	position: absolute;
+	top: 600px;
+	left: 1050px;
+}
+.rectangleY-blue{
+	position: absolute;
+	left: -40px;
+	mix-blend-mode: multiply;
+	width: 0;
+	height: 0;
+	float: left;
+	border-top: 50px solid #00aeef;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+}
+.rectangleY-red{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	mix-blend-mode: multiply;
+	width: 40px;
+	height: 120px;
+	background: red;
+	animation:topY 4s infinite;
+	animation-play-state:paused;
+}
+.LetterY:hover > .rectangleY-red{
+   animation: topY 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes topY{
+	0%{
+		height:34px;
+	}
+	50%{
+		height: 120px;
+	}
+	100%{
+		height:34px;
+	}
+}
+/*-------------------------------Z-------------------------------------*/
+.LetterZ{
+	position: absolute;
+	top: 600px;
+	left: 1165px;
+}
+.rectangleZ-blue{
+	position: absolute;
+	top:0px;
+   width: 0px;  
+   height: 0px;  
+   border-top: 100px solid #00aeef;  
+   border-right: 100px solid transparent;  
+ }
+ .rectangleZ-red{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	mix-blend-mode: multiply;
+	width: 40px;
+	height: 80px;
+	background:red;
+	 animation: rotateZ 4s infinite;
+   animation-play-state: paused; 
+}
+ .LetterZ:hover > .rectangleZ-red{
+   animation: rotateZ 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes rotateZ{
+	0%{
+		transform: rotate(0deg);
+		transform-origin: bottom left ;
+	
+	}
+	50%{
+		transform: rotate(90deg);
+		transform-origin: bottom left;
+		
+	}
+	100%{
+		transform: rotate(0deg);
+		transform-origin: bottom left;
+
+	}
+}
+
+/*-------------------------------1-------------------------------------*/
+.Number1{
+	position: absolute;
+	top:800px;
+	left:200px;
+}
+.rectangle1-blue{
+	position: absolute;
+	top:0px;
+   width: 0px;  
+   height: 0px;  
+   border-top: 30px solid #00aeef;  
+   border-right: 30px solid transparent;  
+   animation: topone 4s infinite;
+   animation-play-state: paused;
+ }
+.rectangle1-red{
+	position: absolute;
+	top:0px;
+	width: 40px;  
+   height: 120px;  
+   background-color: red;
+   mix-blend-mode: multiply;
+}
+
+.Number1:hover > .rectangle1-blue{
+	 animation: topone 4s infinite;
+   animation-play-state: running;
+}
+
+@keyframes topone{
+	0%{
+		top:20px;
+	}
+	50%{
+		top:0px;
+	}
+	100%{
+		top:20px;
+	}
+}
+/*-------------------------------2-------------------------------------*/
+.Number2{
+	position: absolute;
+	top:800px;
+	left:300px;
+}
+.ellipse2-blue{
+	background:#00aeef;
+	position: absolute;
+	mix-blend-mode:multiply;
+	top: 0px;
+	width: 120px;
+	height: 60px;
+	border-radius: 100px 100px 0 0;
+	animation: rotatetwo 4s infinite;
+   animation-play-state: paused; 
+}
+.rectangle2-red{
+	mix-blend-mode:multiply;
+   position: absolute;
+	top:50px;
+	width: 0px;
+	height: 0px;
+ border-bottom: 70px solid red;  
+   border-left: 60px solid transparent;  
+   border-right: 60px solid transparent;  
+
+}
+.Number2:hover > .ellipse2-blue{
+   animation: rotatetwo 4s infinite;
+   animation-play-state: running; 
+}
+
+@keyframes rotatetwo{
+	0%{
+		transform: rotate(90deg);
+		transform-origin: bottom center;
+	}
+	50%{
+		transform: rotate(48deg);
+		transform-origin: bottom center;
+	}
+	100%{
+		transform: rotate(90deg);
+		transform-origin: bottom center;
+	}
+}
+/*-------------------------------3-------------------------------------*/
+
+.Number3{
+	position: absolute;
+	top:800px;
+	left: 482px;
+}
+.ellipse3-red{
+    width: 50px;
+    height: 76px;
+    border-radius: 0% 100% 100% 0%/50%;
+    background: #00aeef;
+}    
+
+.ellipse3-blue{
+	transition: top 2s ease;
+	position:absolute;
+	top: 0px;
+	mix-blend-mode: multiply;
+	width: 72px;
+	height: 76px;
+	border-radius: 0% 100% 100% 0%/50%;
+	background:  red;
+	animation: topthree 4s infinite;
+   animation-play-state: paused;
+}   
+
+.Number3:hover > .ellipse3-blue{
+	animation: topthree 4s infinite;
+   animation-play-state: running;
+}
+@keyframes topthree{
+	0%{
+		top: 0px;
+
+	}
+	50%{
+		top: 40px;
+	}
+	100%{
+		top: 0px;	
+	}
+
+}
+/*-------------------------------4-------------------------------------*/
+.Number4{
+	position: absolute;
+	top:800px;
+	left:580px;
+}
+.rectangle4-blue{
+	position: absolute;
+	top:0px;
+   width: 0px;  
+   height: 0px;  
+   border-bottom: 100px solid #00aeef ;  
+   border-left: 100px solid transparent;  
+   animation: topfour 4s infinite;
+   animation-play-state: paused;
+ }
+.rectangle4-red{
+	position: absolute;
+	top:0px;
+	left: 60px;
+	width: 40px;  
+   height: 120px;  
+   background-color: red;
+   mix-blend-mode: multiply;
+}
+
+.Number4:hover > .rectangle4-blue{
+	 animation: topfour 4s infinite;
+   animation-play-state: running;
+}
+
+@keyframes topfour{
+	0%{
+		top:20px;
+	}
+	50%{
+		top:0px;
+	}
+	100%{
+		top:20px;
+	}
+}
+/*-------------------------------5-------------------------------------*/
+.Number5{
+	position: absolute;
+	top:800px;
+	left: 720px;
+}
+.ellipse5-blue{
+	position: absolute;
+	mix-blend-mode: multiply;
+	left:0px;
+	width: 120px;
+	height: 120px;
+	background:#00aeef;
+	border-radius: 50%;
+}
+.rectangle5-red{
+	position: absolute;
+	top: 0px;
+	left: 59px;
+	mix-blend-mode: multiply;
+	width: 0px;
+	height: 0px;
+	border-top: 60px solid red;
+	border-right: 60px solid transparent;
+	animation: rotateF 4s infinite;
+	animation-play-state: paused;
+}
+
+.Number5:hover > .rectangle5-red{
+	animation: rotateF 4s infinite;
+   animation-play-state: running; 
+}
+
+@keyframes rotateF{
+	0%{
+		transform: rotate(-45deg);
+		transform-origin: bottom left ;
+	}
+	50%{
+		transform: rotate(0deg);
+		transform-origin: bottom left;
+	}
+	100%{
+		transform: rotate(-45deg);
+		transform-origin: bottom left;
+	}
+}
+/*-------------------------------6-------------------------------------*/
+.Number6{
+	position: absolute;
+	top:800px;
+	left: 880px;
+}
+.ellipse6-blue{
+	position: absolute;
+	mix-blend-mode: multiply;
+	top:20px;
+	left:0px;
+	width: 100px;
+	height: 100px;
+	background:#00aeef;
+	border-radius: 50%;
+}
+.ellipse6-red{
+	background:red;
+	position: absolute;
+	mix-blend-mode:multiply;
+	top: 0px;
+	left:-5px;
+	width: 120px;
+	height: 60px;
+	border-radius: 100px 100px 0 0;
+	animation: rotateSix 4s infinite;
+   animation-play-state: paused; 
+}
+.Number6:hover > .ellipse6-red{
+	animation-play-state: running;
+	animation: rotateSix 4s infinite;
+}
+@keyframes rotateSix {
+	0%{
+		transform: rotate(0deg);
+		transform-origin: bottom center;
+	}
+	50%{
+		transform: rotate(-80deg);
+		transform-origin: bottom center;
+	}
+	100%{
+		transform: rotate(0deg);
+		transform-origin: bottom center;
+	}
+
+}
+/*-------------------------------7-------------------------------------*/
+.Number7{
+	position: absolute;
+	top:800px;
+	left: 1056px;
+}
+.rectangle7-blue{
+	position: absolute;
+	top:0px;
+	left:-40px;
+   width: 0px;  
+   height: 0px;  
+   border-top: 60px solid #00aeef;  
+   border-right:80px solid transparent;  
+   animation: topSeven 4s infinite;
+   animation-play-state: paused;
+ }
+.rectangle7-red{
+	position: absolute;
+	top:0px;
+	width: 40px;  
+   height: 120px;  
+   background-color: red;
+   mix-blend-mode: multiply;
+}
+
+.Number7:hover > .rectangle7-blue{
+	 animation: topSeven 4s infinite;
+   animation-play-state: running;
+}
+
+@keyframes topSeven{
+	0%{
+		top:20px;
+	}
+	50%{
+		top:0px;
+	}
+	100%{
+		top:20px;
+	}
+}
+/*-------------------------------8-------------------------------------*/
+.Number8{
+	position: absolute;
+	top:800px;
+	left: 1133px;
+}
+.ellipse8-blue{
+	position: absolute;
+	mix-blend-mode: multiply;
+	top:20px;
+	left:0px;
+	width: 100px;
+	height: 100px;
+	background:#00aeef;
+	border-radius: 50%;
+}
+.ellipse8-red{
+	background:red;
+	position: absolute;
+	mix-blend-mode:multiply;
+	top: 0px;
+	left:10px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	animation: topE 4s infinite;
+   animation-play-state: paused; 
+}
+.Number8:hover > .ellipse8-red{
+	animation-play-state: running;
+	animation: topE 4s infinite;
+}
+@keyframes topE{
+	0%{
+		top:30px;
+	}
+	50%{
+		top:0px;
+	}
+	100%{
+		top:30px;
+	}
+
+}
+
+/*-------------------------------9-------------------------------------*/
+.Number9{
+	position: absolute;
+	top:1000px;
+	left: 190px;
+}
+.ellipse9-blue{
+	position: absolute;
+	mix-blend-mode: multiply;
+	left:0px;
+	width: 80px;
+	height: 80px;
+	background:#00aeef;
+	border-radius: 50%;
+	 animation: topNine 4s infinite;
+   animation-play-state: paused; 
+}
+.rectangle9-red{
+	position: absolute;
+	top:0px;
+	left: 40px;
+	mix-blend-mode: multiply;
+	width: 40px;
+	height: 120px;
+	background: red;
+}
+.Number9:hover > .ellipse9-blue{
+	 animation: topNine 4s infinite;
+   animation-play-state: running; 
+}
+@keyframes topNine {
+	0%{
+		height: 120px;
+	}
+	50%{
+		height: 80px;
+	}
+	100%{
+		height: 120px;
+	}
+
+}
+/*-------------------------------0-------------------------------------*/
+.Number0{
+	position: absolute;
+	top:1000px;
+	left: 320px;
+}
+.ellipse0-blue{
+	position: absolute;
+	mix-blend-mode: multiply;
+	top:20px;
+	left:0px;
+	width: 100px;
+	height: 100px;
+	background:#00aeef;
+	border-radius: 50%;
+}
+.ellipse0-red{ 
+	background:red;
+	position: absolute;
+	mix-blend-mode:multiply;
+	top: 0px;
+	left:10px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	animation: topZero 4s infinite;
+   animation-play-state: paused; 
+}
+.Number0:hover > .ellipse0-red{
+	animation-play-state: running;
+	animation: topZero 4s infinite;
+}
+@keyframes topZero{
+	0%{
+		top:30px;
+	}
+	50%{
+		top:0px;
+	}
+	100%{
+		top:30px;
+	}
+
+}
+
+
+
+
