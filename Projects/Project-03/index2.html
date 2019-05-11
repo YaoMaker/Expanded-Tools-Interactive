@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="content  cui-flex-wrap cui-flex-vertical" id="content2">
+    <header>
+        <div class="header-content  cui-flex-wrap">
+            <div class="header-left"></div>
+            <div class="header-wrap cui-flex-con">
+                <div class="cui-flex-ajust cui-flex-wrap">
+                    <div class="cui-flex-con overflow-visible">
+                        <img  class="search-img" src="image/search.png">
+                    </div>
+                    <div class="cui-flex-con"></div>
+                    <div class="cui-flex-con"></div>
+                    <div class="cui-flex-con">
+
+                    </div>
+                </div>
+            </div>
+            <div class="header-right"></div>
+            <div class="header-title header2-title">996 996 996 996 996 996 996 996 996 996 996 996</div>
+        </div>
+    </header>
+    <section class="cui-flex-con overflow-visible">
+        <div class="cui-flex-ajust cui-flex-wrap   cui-flex-vertical wrap-content">
+
+            <div class="cui-flex-con overflow-visible">
+                <div class="cui-flex-ajust cui-flex-wrap wrap-sub-content">
+                    <div class="wrap-left">
+                        <div class="close-img-sm" onclick="location.href='./index.html'" style="margin-top:50px;position:relative;z-index: 99999">
+                            <div class="wrap-bottom-4-img-sm">
+                                <img src="image/Ellipse%202.png">
+                                <img src="image/Group%2040.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-wrap cui-flex-con overflow-visible">
+                        <div class="cui-flex-ajust cui-flex-wrap wrap-ssub-content">
+                            <div class="cui-flex-con overflow-visible">
+
+                                <div class="show-detail cui-flex-wrap">
+                                    <div class="show-detail-left">
+                                        <div>PREMISES</div>
+                                        <div>A MOMENT</div>
+                                    </div>
+                                    <div class="cui-flex-con show-detail-right overflow-visible">
+                                        <div class="cui-flex-ajust cui-flex-wrap cui-flex-vertical">
+                                            <div class="cui-flex-con overflow-visible" >
+                                                <div class="cui-flex-ajust cui-flex-wrap">
+                                                    <div class="cui-flex-con-1" style="padding-top:60px;padding-right:30px;">
+                                                        <p>"The complaints on the internet right</p>
+                                                        <p>now came about because we've had this</p>
+                                                        <p>situation for long time,which just</p>
+                                                        <p>demonstrates that people havent't been</p>
+                                                        <p>working the 996 schedule willingly.They</p>
+                                                        <p>just wanted to keep their jobs,so they </p>
+                                                        <p>continued to let it happen"</p>
+                                                    </div>
+                                                    <div class="cui-flex-con-2" style="padding-top:80px;">
+                                                        <div class="show-detail-other">
+                                                            <p>"My boss likes to see us working</p>
+                                                            <p>overtime."</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="cui-flex-con-2 show-detail-big overflow-vertical" style="overflow:visible">
+                                                <div>996 Culture</div>
+                                                <div>Do you support</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="cui-flex-con">
+
+
+                            </div>
+                            <div class="cui-flex-con overflow-visible">
+                                <div class="close-img-sm" style="margin-top:50px;">
+                                    <div onclick="closeImg()" class="wrap-bottom-4-img" style="z-index: 9999999">
+                                        <img src="image/Ellipse%202.png">
+                                        <img id="X"  src="image/Group%2040.png">
+                                        <img id="more" class="hide"  src="image/more.png">
+                                    </div>
+                                </div>
+                                <div class="say">
+                                    <p>"I don't really know much</p>
+                                    <p>about the laws."</p>
+                                </div>
+                                <img src="image/cat.png" class="cat-img img">
+                            </div>
+                            <div class="cui-flex-con overflow-visible">
+                                <img src="image/dong.png" class="img" style="width:150%;height:100%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-right"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <footer >
+        <div class="footer-content  cui-flex-wrap">
+            <div class="footer-left">
+                <img src="image/sad.png" class="sad-img-left img">
+            </div>
+            <div class="footer-wrap cui-flex-con overflow-visible">
+                <div class="cui-flex-ajust cui-flex-wrap">
+                    <div class="cui-flex-con overflow-visible">
+                        <img src="image/asset-2.png" class="hetong-img img">
+
+                    </div>
+                    <div class="cui-flex-con"></div>
+                    <div class="cui-flex-con overflow-visible">
+                        <img src="image/download-1.png" class="img" style="position:absolute;left:0;width:100%;top:-50px;">
+                    </div>
+                    <div class="cui-flex-con"></div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <img src="image/sad.png"  class="sad-img-right img">
+            </div>
+        </div>
+    </footer>
+
+</div>
+<script>
+function closeImg()
+{
+    var imgArr=document.querySelectorAll(".img"),
+        X=document.getElementById("X"),
+        more=document.getElementById("more");
+
+    for(var x=0;x<imgArr.length;x++)
+    {
+
+        var target=imgArr[x];
+        if(target.className.indexOf("hide")===-1)
+        {
+            target.className=target.className+" hide";
+            X.className=X.className+" hide";
+            more.className=more.className.replace("hide");
+
+        }
+        else
+        {
+            target.className=target.className.replace("hide"," ");
+            more.className=more.className+" hide";
+            X.className=X.className.replace("hide");
+        }
+
+    }
+}
+</script>
+</body>
+</html>
